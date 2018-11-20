@@ -29,14 +29,16 @@ body {
   align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #f5f5f5;
+  background-color: #343a40;
 }
 
 .form-signin {
   width: 100%;
-  max-width: 330px;
+  max-width: 340px;
   padding: 15px;
   margin: auto;
+  border-radius: 20px 20px 20px 20px; 
+  background-color: #f5f5f5;
 }
 .form-signin .form-control {
   position: relative;
@@ -58,6 +60,12 @@ body {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+.mb-4{
+border-radius: 10px 10px 10px 10px; 
+}
+button{
+
+}
 </style>
   </head>
 
@@ -65,12 +73,15 @@ body {
     <form class="form-signin">
       <img class="mb-4" src="images/logo.png" alt="UNIVERSITY OF ELDORET" width="200" height="150">
       <label for="Username" class="sr-only">Username</label>
-      <input type="text" id="username" class="form-control" placeholder="username" required><br>
+      <input type="text" id="Username" class="form-control" placeholder="username" required></br >
       <label for="inputPassword" class="sr-only">Password</label>
-      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-      <button class="btn btn-primary" type="submit">Sign in</button>
-      <h3>Forgot Password?</h3><br>
+      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required><br />
+	  <label class="pull-left checkbox-inline text-left"><input type="checkbox"> Remember me</label></br >
+	  <button class="btn btn-lg btn-primary btn-block " type="submit">Sign in</button></br ><br />
+      <div class="text-left">
+	  <h4 >Forgot Password?</h4>
         Click <a href="">here</a> to reset your password
+	  </div>
     </form>
   </body>
 </html>
