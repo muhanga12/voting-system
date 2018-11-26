@@ -9,7 +9,7 @@ text-align:center;
 ul li
 {
 background-color:alabama crimson;
-border: 1px solid white;
+border: 0px solid white;
 width: 120px;
 height:30px;
 line-height: 30px;
@@ -20,13 +20,13 @@ list-style:none;
 ul li a
 {
  display:block; 
-color:white;
+color:blue;
 text-decoration:none
 }
 ul li a:hover
 {
 background-color:white;
-color:red;
+color:blue;
 text-decoration:none;
 }
 ul li ul li
