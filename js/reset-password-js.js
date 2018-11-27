@@ -1,0 +1,2 @@
+document.getElementById('first').addEventListener('click',function(){document.querySelector('.bg-modal').style.display='flex';})
+document.getElementById('second').addEventListener('click',function(){document.querySelector('.bg-modal').style.display = 'none'; })
