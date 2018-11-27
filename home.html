@@ -1,5 +1,5 @@
- <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta charset='utf-8'/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,21 +11,25 @@
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <title>UNIVERSITY OF ELDORET</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" >
+<link rel="stylesheet" href=".css">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" ></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 
 <!--Local css,if the cdn fails to load-->
+
+<link rel="stylesheet" href=".css">
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <!--home css-->
  <link href="css/home.css" rel="stylesheet"  type="text/css" />
  <!-- home.css -->
 </head>
- <!--body-->
+
 <body>
-    <!-- navbar-->
-        <div>
-            <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+<!--header-->
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
 	<div class="container-fluid" style="background-color:#172978;">
 
 			<!--logo to be placed here-->
@@ -42,55 +46,65 @@
 	</div>
 </nav>
 
-    <!--navbar-->
 
-    <div class="container">
-        <div class="jumbotron">
-          <h1 class="display-6">Hello, Comrade!!</h1>
+<!--Body content goes here-->
+
+  
+  
+<div class="jumbotron">
+	<h1 class="display-6">Hello, Comrade!!</h1>
           <p class="lead">Welcome to UoE online voting platform</p>
-            <div class="container">
-  <div class="container">
-
-  <div class="row justify-content-center">
-    <div class="col-3">
-      <!-- Example split danger button -->
-<div class="btn-group">
-  <button type="button" class="btn btn-success">RESULTS</button>
-  <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <span class="sr-only">Toggle Dropdown</span>
-	
+  <div class="row justify-content-around">
+    <div class="col-">
+      <div class="container">                                          
+  <div class="dropdown">
+  <button class="btn btn-lg btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Results
   </button>
-   
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Congress Results</a>
+    <a class="dropdown-item" href="#">Student Council Results</a>
+  </div>
+</div>
 </div>
     </div>
-    <div class="col-3">
-     <!-- Example split danger button -->
-<div class="btn-group">
-  <button type="button" class="btn btn-danger"></button>
-  <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <span class="sr-only">Toggle Dropdown</span>
-	 <ul>
- <li><a href="#"><b>VOTE</b></a>
-     <ul>
-       <li><a href="#"><b>CONGRESS</b></a>
-       <li><a href="#"><b>S-C</b></a>
-     </ul>
- </li>
+    <div class="col-">
+      <div class="container">                                         
+  <div class="dropdown">
+  <button id="my_button" class="btn btn-lg btn-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Vote
   </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Congress</a>
+    <a class="dropdown-item" href="#">Student Council</a>
+    
+  </div>
+</div>
 </div>
     </div>
   </div>
-
-  </div>
-
-</div>
-  </div>
 </div>
 
+  
+  
+  
 
-
-        </div>
-
+<script type="text/javascript">
+	$('#my_button').on('click', function(){
+                alert('Hello comrade,you have already voted...');
+                $('#my_button').attr("disabled", true);
+            });
+</script>
+<!--scripts for both cdn and local server-->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script src="js/jquery.dataTables.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+<script type="text/javascript" src="js/bootstrap-datetimepicker.fr.js" charset="UTF-8"></script>
+<script type="text/javascript" charset="utf8" src="js/toastr.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.9.3/intro.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.9.3/intro.js"></script>
 </body>
- <!--body-->
 </html>
+
