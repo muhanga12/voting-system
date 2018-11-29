@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset='utf-8'/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Online voting management system">
+<meta name="MobileOptimized" content="320">
+<meta name="author" content="Muhanga patrick,miuni joel,sylivester wasonga,richard onyango and georgea toto">
+<meta name="generator" content="Vyx v1.0.0">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<title>congress-timer</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" >
+<link rel="stylesheet" href=".css">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" ></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+<!--Local css,if the cdn fails to load-->
+
+<link rel="stylesheet" href=".css">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href=".css">
+ <style>
+   p {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
+}
+</style>  
+</head>
+
+<body>
+<!--header-->
+
+<!-- Navigation -->
+ <div>
+            
+            <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+	<div class="container-fluid" style="background-color:#172978;">
+
+			<!--logo to be placed here-->
+			<a class="navbar-brand" href="#"> <img src="images/logo1.jpeg" width="78" height="20" border="1" alt="SCHOOL LOGO"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" >
+			 <span class="navbar-toggler-icon"></span>
+			</button>
+		
+		<div class="container" align="right">
+        	<p> <a href="#" class="btn btn-info btn-sm"><span class="navbar-toggler-right"></span>Log out</a></p> </div>
+		</div>
+	</div>
+</nav>
+
+
+<!--Body content goes here-->
+<div class="container">
+<div class="row text-center">
+<div class="col-md-12 col-sm-12 col-xs-12">
+
+<h2>TIME TO NEXT CONGRESS ELECTION</h2>
+</div>
+   
+<div class="col-md-12 col-sm-12 col-xs-12">
+<div class="row time-countdown justify-content-center">
+<div id="clock" class="time-count"></div>
+</div>
+    <p id="timer"></p>
+<p>Your Vote Your Choice!!!</p>
+</div>
+    </div>
+</div>
+
+
+
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 5, 2019 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("timer").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
+
+</body>
+</html>
+
